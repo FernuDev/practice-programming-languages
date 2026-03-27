@@ -24,7 +24,7 @@ A comprehensive guide to learning C++ fundamentals through practical, well-comme
 This module covers the essential concepts of C++ from basic syntax through advanced features like object-oriented programming, memory management, and the Standard Template Library (STL).
 
 **Key Features:**
-- 12 standalone C++ programs, each covering one topic
+- 13 standalone C++ programs, each covering one topic
 - Full Spanish comments explaining each concept
 - Practical, real-world examples
 - C++17 features and modern best practices
@@ -148,6 +148,17 @@ Standard Template Library containers and algorithms:
 - Algorithms: `sort()`, `find()`, `count()`, `transform()`
 - Lambda functions with STL (C++11)
 
+### 13. **excepciones.cpp**
+Exception handling and error management:
+- `try`/`catch`/`throw` mechanism
+- Standard exceptions: `invalid_argument`, `out_of_range`, `runtime_error`, `logic_error`
+- Custom exception classes inheriting from `std::exception`
+- Multiple `catch` blocks for different exception types
+- Re-throwing exceptions with `throw;`
+- `noexcept` specifier for exception-safe functions
+- RAII principle with destructors for resource cleanup
+- Exception safety guarantees
+
 ---
 
 ## Getting Started
@@ -187,6 +198,7 @@ cd build
 ./herencia
 ./memoria
 ./stl
+./excepciones
 ```
 
 ---
@@ -207,6 +219,7 @@ cd build
 | `herencia.cpp` | Inheritance | virtual, override, polymorphism |
 | `memoria.cpp` | Memory management | new/delete, smart pointers, RAII |
 | `stl.cpp` | STL containers | vector, map, set, stack, queue, algorithms |
+| `excepciones.cpp` | Exception handling | try/catch, throw, custom exceptions, noexcept |
 
 ---
 
@@ -278,6 +291,7 @@ All files follow the established C++ practice style:
 10. **herencia.cpp** - Advanced OOP
 11. **memoria.cpp** - Memory management (critical for C++)
 12. **stl.cpp** - Standard library
+13. **excepciones.cpp** - Exception handling and error management
 
 ---
 
