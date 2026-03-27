@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.27)
+project(Fundamentals_C VERSION 1.0 DESCRIPTION "Fundamentos de C - Material educativo")
+
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+# Compilar cada archivo como un ejecutable independiente
+add_executable(variables src/variables.c)
+add_executable(operadores src/operadores.c)
+add_executable(control_flujo src/control_flujo.c)
+add_executable(bucles src/bucles.c)
+add_executable(funciones src/funciones.c)
+add_executable(arrays src/arrays.c)
+add_executable(punteros src/punteros.c)
+add_executable(structs src/structs.c)
+add_executable(strings src/strings.c)
+add_executable(memoria src/memoria.c)
+add_executable(io src/io.c)
+add_executable(macros src/macros.c)
+add_executable(algoritmos src/algoritmos.c)

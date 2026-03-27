@@ -2,227 +2,297 @@
 
 [![Language](https://img.shields.io/badge/Language-C-blue.svg)](https://www.cprogramming.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow.svg)]()
+[![Status](https://img.shields.io/badge/Status-Complete-success.svg)]()
 
-Source code repository from an advanced C programming language course. This repository contains organized exercises, projects, and examples covering fundamental to advanced C programming concepts.
+A comprehensive learning path for C programming, organized from fundamentals through advanced concepts. This repository contains organized exercises, projects, and examples covering essential to advanced C programming topics.
+
+---
 
 ## Table of Contents
 
-- [01 Basics](#01-basics)
-- [02 Advanced Types](#02-advanced-types)
-- [03 Preprocessor](#03-preprocessor)
-- [04 Data Structures](#04-data-structures)
-- [05 Algorithms](#05-algorithms)
-- [06 Math](#06-math)
+- [Learning Path](#learning-path)
+- [Fundamentals](#fundamentals)
+- [Intermediate](#intermediate)
+- [Advanced](#advanced)
 - [Building and Running](#building-and-running)
 
-## 01 Basics
+---
 
-[![Basics](https://img.shields.io/badge/Category-Basics-orange.svg)](01_basics/)
+## Learning Path
 
-This section covers fundamental C programming concepts including project organization, memory management, and storage classes.
+```
+Beginner
+  ↓
+Fundamentals (13 programs)
+  ↓
+Intermediate
+  ├─ Basics & Memory Management (projects)
+  ├─ Advanced Types & Preprocessor
+  └─ Preprocessor Macros
+  ↓
+Advanced
+  ├─ Data Structures (Linked Lists)
+  ├─ Algorithms (Searching & Sorting)
+  └─ Mathematics (Series & Patterns)
+```
 
-### Project 01
+---
 
-**Topics Covered:**
+## Fundamentals
+
+[![Fundamentals](https://img.shields.io/badge/Category-Fundamentals-success.svg)](fundamentals/)
+
+**Start here!** Covers core C concepts with 13 standalone programs.
+
+### Topics Covered:
+1. **variables.c** - Data types and variables
+2. **operadores.c** - All operators
+3. **control_flujo.c** - Control structures
+4. **bucles.c** - Loops
+5. **funciones.c** - Functions and scope
+6. **arrays.c** - Arrays and matrices
+7. **punteros.c** - Pointers and memory
+8. **structs.c** - Structures
+9. **strings.c** - String manipulation
+10. **memoria.c** - Dynamic memory management
+11. **io.c** - File I/O
+12. **macros.c** - Preprocessor macros
+13. **algoritmos.c** - Searching and sorting
+
+### Build:
+```bash
+cd fundamentals
+./build.sh
+cd build
+./variables  # run any program
+```
+
+See [fundamentals/README.md](fundamentals/README.md) for detailed information.
+
+---
+
+## Intermediate
+
+### 01 Basics
+
+[![Basics](https://img.shields.io/badge/Category-Intermediate-orange.svg)](01_basics/)
+
+Project-based learning covering modular programming and memory management.
+
+**Project 01 Topics:**
 - Header files and modular programming
 - Function declarations and definitions
-- Stack memory vs heap memory management
+- Stack vs heap memory management
 - Date structures and enumerations
-- Makefile usage for project compilation
+- Makefile usage for compilation
 
-**Files:**
-- `src/main.c` - Main entry point demonstrating header file usage
-- `src/other.c` - Example module with function implementation
-- `src/date.c` - Date manipulation functions
-- `src/stack_memory.c` - Stack memory examples
-- `src/heap_memory.c` - Dynamic memory allocation with malloc/free
-- `headers/date.h` - Date structure and function declarations
-- `headers/other.h` - Function declarations
-- `makefile` - Build configuration
-
-### Project 02
-
-**Topics Covered:**
-- Storage classes: auto, static, extern, register
+**Project 02 Topics:**
+- Storage classes: `auto`, `static`, `extern`, `register`
 - Variable scope and lifetime
 - Global vs local variables
-- Static variables in functions
+- Static variables
 - External variable linkage
-- Register variables for performance optimization
 
-**Files:**
-- `src/main.c` - Storage class demonstration
-- `src/storage_classes.c` - Comprehensive storage class examples
-- `src/extern_class.c` - External variable examples
-- `src/challenge_01.c` - Static and extern variable challenge
-- `src/challenge_02.c` - Static variable accumulation challenge
-- `src/challenge_03.c` - External function linkage challenge
+### 02 Advanced Types
 
-## 02 Advanced Types
+[![Advanced Types](https://img.shields.io/badge/Category-Intermediate-orange.svg)](02_advanced_types/)
 
-[![Advanced Types](https://img.shields.io/badge/Category-Advanced%20Types-purple.svg)](02_advanced_types/)
-
-This section explores advanced type definitions and variable-length arrays in C.
-
-### Typedef
+Explores advanced type definitions and preprocessor features.
 
 **Topics Covered:**
-- Creating custom type names with typedef
-- Typedef vs #define preprocessor directive
-- Typedef for pointers, arrays, and strings
-- Type aliasing for improved code readability
+- `typedef` for custom type names
+- Variable-length arrays (VLA)
+- Preprocessor `#define` constants
+- Type aliasing for code clarity
 
-**Files:**
-- `typedef/typedef.c` - Comprehensive typedef examples including pointer types, arrays, and string definitions
+### 03 Preprocessor
 
-### Variable Length Arrays
+[![Preprocessor](https://img.shields.io/badge/Category-Intermediate-orange.svg)](03_preprocessor/)
 
-**Topics Covered:**
-- Variable-length arrays (VLA) in C
-- Dynamic array allocation at runtime
-- Multi-dimensional variable-length arrays
-- Size_t type for array dimensions
-
-**Files:**
-- `variable_length_arrays/var_len_arr.c` - Basic VLA examples with user input
-- `variable_length_arrays/vla_challenge.c` - VLA challenge with dynamic sum calculation
-
-### Preprocessor Defines
+Deep dive into preprocessor directives and macros.
 
 **Topics Covered:**
-- #define preprocessor directive
+- `#define` macros and function-like macros
 - Symbolic constants
-- Manifest constants
-- NULL pointer definition
+- Macro expansion
+- Conditional compilation
 
-**Files:**
-- `preprocessor_defines/define_preprocessor.c` - Preprocessor constant definitions
+---
 
-## 03 Preprocessor
+## Advanced
 
-[![Preprocessor](https://img.shields.io/badge/Category-Preprocessor-red.svg)](03_preprocessor/)
+### 04 Data Structures
 
-This section covers C preprocessor directives, macros, and conditional compilation.
+[![Data Structures](https://img.shields.io/badge/Category-Advanced-red.svg)](04_data_structures/)
 
-### Macros
+Implementation of fundamental data structures.
 
-**Topics Covered:**
-- #define directive for symbolic constants
-- Function-like macros with parameters
-- Macro expansion and evaluation
-- Common macro patterns (MIN, MAX, SQUARE)
-- Conditional expressions in macros
-
-**Files:**
-- `macros/macros.c` - Macro definitions including MIN, SQUARE, IS_LEAPYEAR, TO_LOWER
-
-### Exercises
-
-**Topics Covered:**
-- Advanced macro definitions
-- Multi-parameter macros
-- Character manipulation macros
-- Type checking macros
-
-**Files:**
-- `exercises/exercises_13_5.c` - Advanced macro exercises including MIN, MAX3, TOLOWER, IS_LETTER
-
-## 04 Data Structures
-
-[![Data Structures](https://img.shields.io/badge/Category-Data%20Structures-green.svg)](04_data_structures/)
-
-This section implements fundamental data structures in C.
-
-### Linked List
-
-**Topics Covered:**
+**Topics:**
 - Singly linked list implementation
-- Dynamic memory allocation for nodes
-- List insertion and traversal
-- List size calculation
-- Middle element retrieval
-- List concatenation and arithmetic operations
+- Dynamic node allocation
+- List traversal and manipulation
+- Insertion and search operations
 
-**Files:**
-- `linked_list/linked_list.c` - Complete linked list implementation with functions for insertion, printing, size calculation, and number addition algorithm
+### 05 Algorithms
 
-## 05 Algorithms
+[![Algorithms](https://img.shields.io/badge/Category-Advanced-red.svg)](05_algorithms/)
 
-[![Algorithms](https://img.shields.io/badge/Category-Algorithms-blue.svg)](05_algorithms/)
+Fundamental searching and sorting algorithms.
 
-This section covers fundamental searching and sorting algorithms.
+**Topics:**
+- Sequential/linear search - O(n)
+- Binary search - O(log n)
+- Algorithm complexity analysis
+- Performance comparison
 
-### Searching
+### 06 Math
 
-**Topics Covered:**
-- Sequential/linear search algorithm
-- Binary search algorithm
-- Time complexity analysis
-- Step counting for algorithm efficiency
+[![Math](https://img.shields.io/badge/Category-Advanced-red.svg)](06_math/)
 
-**Files:**
-- `searching/sequential_search.c` - Linear search implementation with step counting
-- `searching/binary_search.c` - Binary search implementation with O(log n) complexity
+Mathematical algorithms and pattern generation.
 
-## 06 Math
-
-[![Math](https://img.shields.io/badge/Category-Math-teal.svg)](06_math/)
-
-This section contains mathematical algorithms and pattern generation exercises.
-
-### Series
-
-**Topics Covered:**
-- Taylor series expansion
-- Sine and cosine calculation using series
-- Exponential function calculation
+**Topics:**
+- Taylor series (sin, cos, exp)
+- Series expansion algorithms
 - Factorial computation
-- Degree to radian conversion
+- Degree/radian conversion
+- Pattern generation
 
-**Files:**
-- `series/series_taylor.c` - Taylor series implementations for sin, cos, and exp functions
-
-### Patterns
-
-**Topics Covered:**
-- Pattern generation with nested loops
-- Pyramid pattern printing
-- User input handling
-
-**Files:**
-- `patterns/pyramid.c` - Pyramid pattern generator
+---
 
 ## Building and Running
 
 ### Prerequisites
 
-- GCC compiler
-- Make utility (optional, for projects with makefiles)
+- GCC or Clang compiler
+- Make utility (for projects with Makefiles)
+- CMake 3.27+ (for fundamentals)
 
-### Compilation
-
-Most files can be compiled directly with GCC:
+### Fundamentals (Recommended Start)
 
 ```bash
-gcc -Wall -g -o output_name source_file.c
-./output_name
+cd fundamentals
+
+# Build all 13 programs
+./build.sh
+
+# Run any program
+cd build
+./variables
+./operadores
+./punteros
+# ... etc.
 ```
 
-For projects with makefiles:
+### Individual Projects
 
 ```bash
 cd 01_basics/project_01
 make
-```
+./programa
 
-### Clean Build Artifacts
-
-```bash
-cd 01_basics/project_01
+# Clean
 make clean
 ```
 
+Most .c files can be compiled directly:
+```bash
+gcc -Wall -g -o programa archivo.c
+./programa
+```
+
+### Recommended Learning Order
+
+1. **Start with fundamentals/** (13 programs, 1-2 weeks)
+2. **01_basics/** (project-based, 1 week)
+3. **02_advanced_types/** & **03_preprocessor/** (2-3 days each)
+4. **04_data_structures/** (1 week)
+5. **05_algorithms/** (3-5 days)
+6. **06_math/** (optional, specialized topics)
+
+---
+
+## File Organization
+
+```
+practice-c/
+├── fundamentals/              ← START HERE (13 programs)
+│   ├── CMakeLists.txt
+│   ├── build.sh
+│   ├── README.md
+│   └── src/
+│       ├── variables.c
+│       ├── operadores.c
+│       ├── ... (13 total)
+│
+├── 01_basics/                 (Intermediate)
+│   ├── project_01/
+│   └── project_02/
+│
+├── 02_advanced_types/         (Intermediate)
+│   ├── typedef/
+│   ├── variable_length_arrays/
+│   └── preprocessor_defines/
+│
+├── 03_preprocessor/           (Intermediate)
+│   ├── macros/
+│   └── exercises/
+│
+├── 04_data_structures/        (Advanced)
+│   └── linked_list/
+│
+├── 05_algorithms/             (Advanced)
+│   └── searching/
+│
+└── 06_math/                   (Advanced)
+    ├── series/
+    └── patterns/
+```
+
+---
+
+## Features
+
+- ✅ **13 Fundamentals Programs** - Complete beginner coverage
+- ✅ **Project-Based Learning** - Real-world contexts
+- ✅ **Cross-Platform** - Works on Linux, macOS, Windows
+- ✅ **Well-Commented** - Spanish comments for clarity
+- ✅ **CMake Support** - Modern build system for fundamentals
+- ✅ **Makefile Examples** - Traditional build files included
+- ✅ **Algorithm Implementation** - Search and sort examples
+- ✅ **Data Structures** - Linked lists and more
+
+---
+
+## Resources
+
+### Official Documentation
+- [C Reference (cppreference.com)](https://en.cppreference.com/w/c)
+- [GNU C Library](https://www.gnu.org/software/libc/manual/)
+
+### Learning Resources
+- [Learn C (learn-c.org)](https://www.learn-c.org/)
+- [The C Book](https://www.gbdirect.co.uk/c_book/)
+
+### Tools
+- [GCC Compiler](https://gcc.gnu.org/)
+- [Valgrind (memory debugging)](https://valgrind.org/)
+- [GDB (debugger)](https://www.gnu.org/software/gdb/)
+
+---
+
 ## License
 
-This repository is for educational purposes. Feel free to use and modify the code for learning.
+This repository is for educational purposes. Licensed under MIT.
+
+---
+
+<div align="center">
+
+### Part of practice-programming-languages
+
+**Last Updated:** March 2026
+
+Complete the learning path and master C programming!
+
+</div>
