@@ -1,0 +1,29 @@
+# C++ specific files
+
+# Object files
+*.o
+*.o.d
+
+# Build directories
+build/
+cmake_build/
+dist/
+
+# Executables
+*.out
+*.exe
+*.app
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# CMake
+CMakeUserPresets.json
+CMakeCache.txt
+cmake_install.cmake
+Makefile

@@ -1,3 +1,0 @@
-/Users/fernudev/Documents/DSA-C++/LinkedList/build/CMakeFiles/LinkedList.dir
-/Users/fernudev/Documents/DSA-C++/LinkedList/build/CMakeFiles/edit_cache.dir
-/Users/fernudev/Documents/DSA-C++/LinkedList/build/CMakeFiles/rebuild_cache.dir
