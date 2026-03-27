@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.27)
+project(Fundamentals VERSION 1.0 DESCRIPTION "Fundamentos de C++ - Material educativo")
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Compilar cada archivo como un ejecutable independiente
+add_executable(variables src/variables.cpp)
+add_executable(operadores src/operadores.cpp)
+add_executable(control_flujo src/control_flujo.cpp)
+add_executable(bucles src/bucles.cpp)
+add_executable(funciones src/funciones.cpp)
+add_executable(arreglos src/arreglos.cpp)
+add_executable(punteros src/punteros.cpp)
+add_executable(strings src/strings.cpp)
+add_executable(clases src/clases.cpp)
+add_executable(herencia src/herencia.cpp)
+add_executable(memoria src/memoria.cpp)
+add_executable(stl src/stl.cpp)
