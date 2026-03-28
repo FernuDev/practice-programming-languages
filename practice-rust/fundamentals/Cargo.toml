@@ -1,0 +1,59 @@
+[package]
+name = "fundamentals"
+version = "1.0.0"
+edition = "2021"
+description = "Fundamentos de Rust - Material educativo"
+
+[[bin]]
+name = "variables"
+path = "src/variables.rs"
+
+[[bin]]
+name = "operadores"
+path = "src/operadores.rs"
+
+[[bin]]
+name = "control_flujo"
+path = "src/control_flujo.rs"
+
+[[bin]]
+name = "bucles"
+path = "src/bucles.rs"
+
+[[bin]]
+name = "funciones"
+path = "src/funciones.rs"
+
+[[bin]]
+name = "ownership"
+path = "src/ownership.rs"
+
+[[bin]]
+name = "referencias"
+path = "src/referencias.rs"
+
+[[bin]]
+name = "structs"
+path = "src/structs.rs"
+
+[[bin]]
+name = "enums"
+path = "src/enums.rs"
+
+[[bin]]
+name = "strings"
+path = "src/strings.rs"
+
+[[bin]]
+name = "colecciones"
+path = "src/colecciones.rs"
+
+[[bin]]
+name = "errores"
+path = "src/errores.rs"
+
+[[bin]]
+name = "traits"
+path = "src/traits.rs"
+
+[dependencies]
